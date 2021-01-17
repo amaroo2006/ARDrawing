@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ARDrawing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObI-8T-ufm">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByP-6H-EFa">
+                                <rect key="frame" x="189" y="797" width="36" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="QZU-JR-pB5"/>
+                                    <constraint firstAttribute="height" constant="45" id="Ysd-uj-LAa"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="bXy-Ds-DnA"/>
+                                    <constraint firstAttribute="width" constant="65" id="dvG-BY-Fig"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="65" id="zuN-hv-duF"/>
+                                </constraints>
+                                <state key="normal" title="Draw"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByP-6H-EFa" secondAttribute="bottom" constant="20" id="9pc-tC-GR4"/>
+                            <constraint firstItem="ByP-6H-EFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="189" id="ECu-s4-ifn"/>
+                            <constraint firstItem="ObI-8T-ufm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fzg-eR-KT7"/>
+                            <constraint firstAttribute="trailing" secondItem="ObI-8T-ufm" secondAttribute="trailing" id="Kpb-WJ-9yg"/>
+                            <constraint firstItem="ByP-6H-EFa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="189" id="KtI-xH-cJq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ByP-6H-EFa" secondAttribute="trailing" constant="189" id="Olp-aU-Jl0"/>
+                            <constraint firstAttribute="bottom" secondItem="ObI-8T-ufm" secondAttribute="bottom" id="SrV-xC-bmN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ByP-6H-EFa" secondAttribute="trailing" constant="189" id="VVk-k4-OGD"/>
+                            <constraint firstItem="ObI-8T-ufm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YQi-Ui-H7N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ObI-8T-ufm" secondAttribute="trailing" id="ae5-4A-bRm"/>
+                            <constraint firstItem="ObI-8T-ufm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dIR-yp-RWN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByP-6H-EFa" secondAttribute="bottom" constant="20" id="eYf-jV-fdD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByP-6H-EFa" secondAttribute="bottom" constant="20" id="jha-Vm-qQh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ObI-8T-ufm" secondAttribute="bottom" id="oL5-IJ-U7m"/>
+                            <constraint firstItem="ObI-8T-ufm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="so9-aY-Sbm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="draw" destination="ByP-6H-EFa" id="g6f-Xe-gG2"/>
+                        <outlet property="sceneView" destination="ObI-8T-ufm" id="1C2-aQ-Obu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
